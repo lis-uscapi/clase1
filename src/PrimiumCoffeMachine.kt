@@ -4,5 +4,7 @@ class PrimiumCoffeMachine (
     private val color:String
         ) : BaseCoffeMachine(price ,color){
 
-
+            fun makeCapuchino(){
+                println("here is your capuccino")
+            }
 }

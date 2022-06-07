@@ -6,4 +6,6 @@ fun main() {
 
     //se sirve cafe
     coffeMachine.makeCoffe();
+    coffeMachine.makeCapuchino();
+
 }
