@@ -10,7 +10,7 @@ abstract class BaseCoffeMachine (
     abstract fun makeCoffe(type:String):String
 
 //    aperturar
-     open fun machineInfo():String{
+     fun machineInfo():String{
         return "coffe Machine Details:\n" +
                 "Brand: $brand\n" +
                 "Color: $color\n" +
