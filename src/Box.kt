@@ -9,9 +9,16 @@ class Box constructor(
     init {
         println("Box is created")
     }
+
+    //como para eleccion si pasa algo
+    //si esta vacio aparece como resultado
+    //constructor secundario
     constructor():this(0,0,0){
         println("Secondary constructor called")
     }
+    //constructor(color:String="blue"):this(0,0,0)
+
+
 //-------------------
 //constructor(color:String="blue"):this(0,0,0)
     //iguales  / \
