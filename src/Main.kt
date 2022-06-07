@@ -8,6 +8,9 @@ fun main() {
     println(coffe)
     println(info)
 
+    val simpleCoffeeMachine=CoffeeMachine(2000.0,"Black")
+    val coffe2=simpleCoffeeMachine.makeCoffe("Expresso")
+    println(coffe2)
 
     //se sirve cafe
     //coffeMachine.makeCoffe();
