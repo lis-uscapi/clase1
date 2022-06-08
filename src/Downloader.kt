@@ -1,10 +1,10 @@
 
-
+//
 class Downloader {
 
     //PARA SABER CUANDO INICIA LA DESCARGA
-    var downloadListener:DownloadListener?=null
-
+    var downloadListener:DownloadListener?=null//si no existe DownloadListener se inicializa nulo
+                                               //para verificar qu es nulo
     fun downloadFile(file:String){//esta descargando
         //desde la carpeta de interfas valida que la descarga inicio
         downloadListener?.onDownloadStarted()
