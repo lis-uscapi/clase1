@@ -1,4 +1,4 @@
-class App:DownloadListener{
+/*class App:DownloadListener{
     //lo que pasa en cada procesos DownloadListener y Downloader
     //cuando se inicia descarga
     override fun onDownloadStarted() {
@@ -14,14 +14,27 @@ class App:DownloadListener{
     override fun onProgressUpdate(progress: Int) {
         println("$progress% downloaded")
     }
-
-}
+} */
 fun main() {
+    //val downloadListener=App()
+    //para volverlo un objeto
 
-
-    val downloadListener=App()
     val downloader=Downloader()
-    downloader.downloadListener=downloadListener
-    downloader.downloadFile("newSong.mp3")
+    //downloader.downloadListener=downloadListener
+    downloader.downloadListener= object : DownloadListener{
+
+        override fun onDownloadStarted() {
+            println("Download started")
+        }
+        override fun onDownloadComplete(file: String) {
+            println("$file downloaded")
+        }
+        override fun onProgressUpdate(progress: Int) {
+            println("$progress% downloaded")
+        }
+    }
+        downloader.downloadFile("newSong.mp3")
+
+
 
 }
